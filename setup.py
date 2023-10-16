@@ -12,10 +12,8 @@ setup(
     name="CybORG",
     version="2.1",
     install_requires=requirements,
-    include_package_data=True,
+    # TODO include_package_data=True,
     packages=find_packages(),
-    # TODO package_data={
-    # TODO     "CybORG.Shared.Scenarios": ["images/*.yaml"],
-    # TODO },
+    package_data={"CybORG.Shared.Scenarios.images": ["*.yaml"]},
     description="A Cyber Security Research Environment",
 )
