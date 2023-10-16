@@ -12,7 +12,10 @@ setup(
     name="CybORG",
     version="2.1",
     install_requires=requirements,
-    include_package_data=True,
+    # TODO include_package_data=True,
     packages=find_packages(),
+    package_data={
+        "": ["*.yaml"]
+    },
     description="A Cyber Security Research Environment",
 )
